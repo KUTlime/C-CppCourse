@@ -47,7 +47,10 @@ namespace Advantech
 	}
 	inline namespace Router
 	{
-		class Firmaware{};
+		class Firmaware
+		{
+			
+		};
 	}
 }
 

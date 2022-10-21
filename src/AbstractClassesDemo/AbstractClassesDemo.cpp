@@ -34,7 +34,7 @@ class Circle : public DrawableObject
 public:
     void Draw(GraphicalDrawingBoard&) const; //draw a circle
     void Clear(GraphicalDrawingBoard&) const override { std::cout << "Circle::Clear()" << std::endl; };
-    void Test() override { std::cout << "Circle::Test()" << std::endl; };
+    void Test() /*override will not compile*/ { std::cout << "Circle::Test()" << std::endl; };
 };
 
 
