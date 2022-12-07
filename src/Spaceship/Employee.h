@@ -9,5 +9,7 @@ private:
 public:
 	auto operator <=>(const Employee& other) const = default;
 	Employee(string fullname, int arbitrarynumber) : name(fullname), number(arbitrarynumber) {}
+	string GetName() { return name; };
+	int GetNumber() { return number; };
 };
 
