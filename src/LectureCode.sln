@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flow control", "Basic Conce
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Operators", "Basic Concepts\Operators\Operators.vcxproj", "{22B67876-09B0-4388-AA1A-6B4CC4A07A29}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers", "Basic Concepts\Pointers\Pointers.vcxproj", "{9C887B27-371B-4A3F-B741-A69C97691F94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -335,6 +337,14 @@ Global
 		{22B67876-09B0-4388-AA1A-6B4CC4A07A29}.Release|x64.Build.0 = Release|x64
 		{22B67876-09B0-4388-AA1A-6B4CC4A07A29}.Release|x86.ActiveCfg = Release|Win32
 		{22B67876-09B0-4388-AA1A-6B4CC4A07A29}.Release|x86.Build.0 = Release|Win32
+		{9C887B27-371B-4A3F-B741-A69C97691F94}.Debug|x64.ActiveCfg = Debug|x64
+		{9C887B27-371B-4A3F-B741-A69C97691F94}.Debug|x64.Build.0 = Debug|x64
+		{9C887B27-371B-4A3F-B741-A69C97691F94}.Debug|x86.ActiveCfg = Debug|Win32
+		{9C887B27-371B-4A3F-B741-A69C97691F94}.Debug|x86.Build.0 = Debug|Win32
+		{9C887B27-371B-4A3F-B741-A69C97691F94}.Release|x64.ActiveCfg = Release|x64
+		{9C887B27-371B-4A3F-B741-A69C97691F94}.Release|x64.Build.0 = Release|x64
+		{9C887B27-371B-4A3F-B741-A69C97691F94}.Release|x86.ActiveCfg = Release|Win32
+		{9C887B27-371B-4A3F-B741-A69C97691F94}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -355,6 +365,7 @@ Global
 		{A0FB15F8-0BFC-4043-BC3A-B0C1E847A9E3} = {81464123-62E7-4EE7-AF3E-38810FFF6DE5}
 		{5CF8707E-449D-4985-9BAB-35F4534433E4} = {81464123-62E7-4EE7-AF3E-38810FFF6DE5}
 		{22B67876-09B0-4388-AA1A-6B4CC4A07A29} = {81464123-62E7-4EE7-AF3E-38810FFF6DE5}
+		{9C887B27-371B-4A3F-B741-A69C97691F94} = {81464123-62E7-4EE7-AF3E-38810FFF6DE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF8F5646-D8D5-40D6-AE44-255D286A627F}
