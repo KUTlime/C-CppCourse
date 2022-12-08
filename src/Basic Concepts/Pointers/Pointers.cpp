@@ -1,20 +1,65 @@
-﻿// Pointers.cpp : Tento soubor obsahuje funkci main. Provádění programu se tam zahajuje a ukončuje.
-//
-
-#include <iostream>
+﻿#include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int x = 1;	// Declaration and initialization.
+	int y = 2; // Declaration and initialization.
+	int* ip = &x;
+	printf("Block 1\n");
+	printf("The value of x is %d\n", x);
+	printf("The value of y is %d\n", y);
+	printf("The value of ip is %d\n", *ip);
+	printf("The address of ip is %p\n", ip);
+
+	x = 3;
+	printf("Block 2\n");
+	printf("The value of x is %d\n", x);
+	printf("The value of y is %d\n", y);
+	printf("The value of ip is %d\n", *ip);
+	printf("The address of ip is %p\n", ip);
+
+	ip = &y;
+	printf("Block 3\n");
+	printf("The value of x is %d\n", x);
+	printf("The value of y is %d\n", y);
+	printf("The value of ip is %d\n", *ip);
+	printf("The address of ip is %p\n", ip);
+
+	int& int_reference = y;
+	printf("Block 4\n");
+	printf("The value of y is %d\n", y);
+	printf("The value of ip is %d\n", *ip);
+	printf("The address of ip is %p\n", ip);
+	printf("The value of int_address is %d\n", int_reference);
+
+	int_reference = 4;
+	printf("Block 5\n");
+	printf("The value of y is %d\n", y);
+	printf("The value of ip is %d\n", *ip);
+	printf("The address of ip is %p\n", ip);
+	printf("The value of int_address is %d\n", int_reference);
+
+
+	int z = 5;
+	ip = &z;
+	printf("Block 6\n");
+	printf("The value of x is %d\n", x);
+	printf("The value of y is %d\n", y);
+	printf("The value of z is %d\n", z);
+	printf("The value of ip is %d\n", *ip);
+	printf("The address of ip is %p\n", ip);
+	printf("The value of int_address is %d\n", int_reference);
+
+	int_reference = z; // reference is immutable !
+	printf("Block 7\n");
+	printf("The value of x is %d\n", x);
+	printf("The value of y is %d\n", y);
+	printf("The value of z is %d\n", z);
+	printf("The value of ip is %d\n", *ip);
+	printf("The address of ip is %p\n", ip);
+	printf("The value of int_address is %d\n", int_reference);
+
+	puts("\nEnd of the program.");
+
+	return 0;
 }
-
-// Spuštění programu: Ctrl+F5 nebo nabídka Ladit > Spustit bez ladění
-// Ladění programu: F5 nebo nabídka Ladit > Spustit ladění
-
-// Tipy pro zahájení práce:
-//   1. K přidání nebo správě souborů použijte okno Průzkumník řešení.
-//   2. Pro připojení ke správě zdrojového kódu použijte okno Team Explorer.
-//   3. K zobrazení výstupu sestavení a dalších zpráv použijte okno Výstup.
-//   4. K zobrazení chyb použijte okno Seznam chyb.
-//   5. Pokud chcete vytvořit nové soubory kódu, přejděte na Projekt > Přidat novou položku. Pokud chcete přidat do projektu existující soubory kódu, přejděte na Projekt > Přidat existující položku.
-//   6. Pokud budete chtít v budoucnu znovu otevřít tento projekt, přejděte na Soubor > Otevřít > Projekt a vyberte příslušný soubor .sln.

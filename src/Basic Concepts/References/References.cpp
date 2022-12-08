@@ -1,4 +1,5 @@
-﻿// Demonstration of side effect of reference
+﻿#include <cstdio>
+// Demonstration of side effect of reference
 int& f(int& x)
 {
 	++x;
