@@ -93,6 +93,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Overloading", "Basic Concep
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Statistics", "Basic Concepts\Excercies\Statistics\Statistics.vcxproj", "{E1F74DCB-2712-4B1D-8633-F92659507140}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factorial example", "Basic Concepts\Excercies\Factorial example\Factorial example.vcxproj", "{97523250-1267-4114-BABE-50088610AF25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -437,6 +439,14 @@ Global
 		{E1F74DCB-2712-4B1D-8633-F92659507140}.Release|x64.Build.0 = Release|x64
 		{E1F74DCB-2712-4B1D-8633-F92659507140}.Release|x86.ActiveCfg = Release|Win32
 		{E1F74DCB-2712-4B1D-8633-F92659507140}.Release|x86.Build.0 = Release|Win32
+		{97523250-1267-4114-BABE-50088610AF25}.Debug|x64.ActiveCfg = Debug|x64
+		{97523250-1267-4114-BABE-50088610AF25}.Debug|x64.Build.0 = Debug|x64
+		{97523250-1267-4114-BABE-50088610AF25}.Debug|x86.ActiveCfg = Debug|Win32
+		{97523250-1267-4114-BABE-50088610AF25}.Debug|x86.Build.0 = Debug|Win32
+		{97523250-1267-4114-BABE-50088610AF25}.Release|x64.ActiveCfg = Release|x64
+		{97523250-1267-4114-BABE-50088610AF25}.Release|x64.Build.0 = Release|x64
+		{97523250-1267-4114-BABE-50088610AF25}.Release|x86.ActiveCfg = Release|Win32
+		{97523250-1267-4114-BABE-50088610AF25}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -468,6 +478,7 @@ Global
 		{C92F024B-8C21-4B46-BD3B-437B6BF48261} = {6473E3FC-1726-419C-ADD1-365489C17EA4}
 		{CE600CCC-2EF8-4986-8E22-F2DF35E6508C} = {6473E3FC-1726-419C-ADD1-365489C17EA4}
 		{E1F74DCB-2712-4B1D-8633-F92659507140} = {8833DAB5-035E-4DAE-8B45-2D9721C9120E}
+		{97523250-1267-4114-BABE-50088610AF25} = {8833DAB5-035E-4DAE-8B45-2D9721C9120E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF8F5646-D8D5-40D6-AE44-255D286A627F}
