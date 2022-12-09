@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Functions", "Basic Concepts
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Recursion", "Recursion\Recursion.vcxproj", "{7EE5F63E-3ECE-4748-A0EC-64B13C5B72A2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Passing values", "Basic Concepts\Functions\Passing values\Passing values.vcxproj", "{95DD4648-5A00-4F60-BB6A-3CE691121261}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -397,6 +399,14 @@ Global
 		{7EE5F63E-3ECE-4748-A0EC-64B13C5B72A2}.Release|x64.Build.0 = Release|x64
 		{7EE5F63E-3ECE-4748-A0EC-64B13C5B72A2}.Release|x86.ActiveCfg = Release|Win32
 		{7EE5F63E-3ECE-4748-A0EC-64B13C5B72A2}.Release|x86.Build.0 = Release|Win32
+		{95DD4648-5A00-4F60-BB6A-3CE691121261}.Debug|x64.ActiveCfg = Debug|x64
+		{95DD4648-5A00-4F60-BB6A-3CE691121261}.Debug|x64.Build.0 = Debug|x64
+		{95DD4648-5A00-4F60-BB6A-3CE691121261}.Debug|x86.ActiveCfg = Debug|Win32
+		{95DD4648-5A00-4F60-BB6A-3CE691121261}.Debug|x86.Build.0 = Debug|Win32
+		{95DD4648-5A00-4F60-BB6A-3CE691121261}.Release|x64.ActiveCfg = Release|x64
+		{95DD4648-5A00-4F60-BB6A-3CE691121261}.Release|x64.Build.0 = Release|x64
+		{95DD4648-5A00-4F60-BB6A-3CE691121261}.Release|x86.ActiveCfg = Release|Win32
+		{95DD4648-5A00-4F60-BB6A-3CE691121261}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -424,6 +434,7 @@ Global
 		{6473E3FC-1726-419C-ADD1-365489C17EA4} = {81464123-62E7-4EE7-AF3E-38810FFF6DE5}
 		{DC0A5887-13FE-4F21-B022-5F94A29C6073} = {6473E3FC-1726-419C-ADD1-365489C17EA4}
 		{7EE5F63E-3ECE-4748-A0EC-64B13C5B72A2} = {6473E3FC-1726-419C-ADD1-365489C17EA4}
+		{95DD4648-5A00-4F60-BB6A-3CE691121261} = {6473E3FC-1726-419C-ADD1-365489C17EA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF8F5646-D8D5-40D6-AE44-255D286A627F}
