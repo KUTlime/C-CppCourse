@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e1f74dcb-2712-4b1d-8633-f92659507140}</ProjectGuid>
-    <RootNamespace>Statistics</RootNamespace>
+    <ProjectGuid>{8ad02af5-ec13-49b5-bf02-0b81a9a658a3}</ProjectGuid>
+    <RootNamespace>Preprocessordirectives</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Functions.cpp" />
-    <ClCompile Include="Statistics.cpp" />
+    <ClCompile Include="Preprocessor directives.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Functions.h" />
+    <ClInclude Include="conditional.h" />
+    <ClInclude Include="includeA.h" />
+    <ClInclude Include="includeB.h" />
+    <ClInclude Include="preproc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
