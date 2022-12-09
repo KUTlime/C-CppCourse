@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Return values and function 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Overloading", "Basic Concepts\Functions\Overloading\Overloading.vcxproj", "{CE600CCC-2EF8-4986-8E22-F2DF35E6508C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Statistics", "Basic Concepts\Excercies\Statistics\Statistics.vcxproj", "{E1F74DCB-2712-4B1D-8633-F92659507140}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -427,6 +429,14 @@ Global
 		{CE600CCC-2EF8-4986-8E22-F2DF35E6508C}.Release|x64.Build.0 = Release|x64
 		{CE600CCC-2EF8-4986-8E22-F2DF35E6508C}.Release|x86.ActiveCfg = Release|Win32
 		{CE600CCC-2EF8-4986-8E22-F2DF35E6508C}.Release|x86.Build.0 = Release|Win32
+		{E1F74DCB-2712-4B1D-8633-F92659507140}.Debug|x64.ActiveCfg = Debug|x64
+		{E1F74DCB-2712-4B1D-8633-F92659507140}.Debug|x64.Build.0 = Debug|x64
+		{E1F74DCB-2712-4B1D-8633-F92659507140}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1F74DCB-2712-4B1D-8633-F92659507140}.Debug|x86.Build.0 = Debug|Win32
+		{E1F74DCB-2712-4B1D-8633-F92659507140}.Release|x64.ActiveCfg = Release|x64
+		{E1F74DCB-2712-4B1D-8633-F92659507140}.Release|x64.Build.0 = Release|x64
+		{E1F74DCB-2712-4B1D-8633-F92659507140}.Release|x86.ActiveCfg = Release|Win32
+		{E1F74DCB-2712-4B1D-8633-F92659507140}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -457,6 +467,7 @@ Global
 		{95DD4648-5A00-4F60-BB6A-3CE691121261} = {6473E3FC-1726-419C-ADD1-365489C17EA4}
 		{C92F024B-8C21-4B46-BD3B-437B6BF48261} = {6473E3FC-1726-419C-ADD1-365489C17EA4}
 		{CE600CCC-2EF8-4986-8E22-F2DF35E6508C} = {6473E3FC-1726-419C-ADD1-365489C17EA4}
+		{E1F74DCB-2712-4B1D-8633-F92659507140} = {8833DAB5-035E-4DAE-8B45-2D9721C9120E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF8F5646-D8D5-40D6-AE44-255D286A627F}
