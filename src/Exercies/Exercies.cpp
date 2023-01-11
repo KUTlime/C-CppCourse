@@ -10,7 +10,7 @@ void Exercice1()
 	std::vector<std::vector<int>> jagger = { {1,2,3}, {-2, -14,55,53}, {0}, {-1, 2,-3,-4, -100} };
 	int result = std::accumulate(jagger.begin(), jagger.end(), 0, []( int a, std::vector<int> v)
 	{
-			return a + std::accumulate(v.begin(), v.end(), 0);
+		return a + std::accumulate(v.begin(), v.end(), 0);
 	});
 	std::cout << result << std::endl;
 }

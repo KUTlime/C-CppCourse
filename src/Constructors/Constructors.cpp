@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 class Real
 {
@@ -36,6 +37,7 @@ private:
 	Real realPart;
 	Imaginary imaginaryPart;
 };
+
 class ComplexV2
 {
 public:
@@ -47,7 +49,13 @@ private:
 	Imaginary imaginaryPart;
 };
 
+void Test()
+{
+	using std::vector;
+}
+
 int main()
 {
 	Complex c();
+	Complex d = { Real(0), Imaginary(0) };
 }

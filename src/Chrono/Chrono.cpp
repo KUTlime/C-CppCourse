@@ -1,6 +1,6 @@
 #include <chrono>
-using namespace std::chrono_literals;
 #include <iostream>
+using namespace std::chrono_literals;
 using std::cout;
 
 
@@ -10,6 +10,7 @@ int main()
 	cout << "time: " << now << '\n';
 	auto nowlocal = std::chrono::zoned_time{ std::chrono::current_zone(), now};
 	cout << "local time: " << nowlocal << '\n';
+	cout << std::chrono::current_zone() << std::endl;
 
 	auto date1 = 1d / std::chrono::February / 2025;
 	date1 += std::chrono::months(1);

@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <list>
 #include <vector>
 #include <algorithm>
@@ -31,10 +31,21 @@ class Circle : public DrawableObject
 public:
     void Draw(GraphicalDrawingBoard&) const; //draw a circle
     void Clear(GraphicalDrawingBoard&) const override { std::cout << "Circle::Clear()" << std::endl; };
-    void Test() /*override will not compile*/ { std::cout << "Circle::Test()" << std::endl; };
+    void Test() /*override will not compile */ { std::cout << "Circle::Test()" << std::endl; };
 };
 
+struct Base
+{
+    virtual int foo() const {};
+};
 
+struct Derived : Base
+{
+    virtual int foo() const override  // whoops!​
+    {
+        // ... Where is my const?​
+    }
+};
 
 int main()
 {
@@ -52,12 +63,21 @@ int main()
     { 
         object->Draw(drawingBoard);
         object->Clear(drawingBoard);
+        object->Test();
     });
 
-    for (auto item : drawableList)
+    Triangle t;
+    Rectangle r;
+    Circle c;
+    /*std::vector<DrawableObject> drawableList2 = { t, r, c };
+    
+    std::for_each(drawableList2.begin(), drawableList2.end(), [&drawingBoard](DrawableObject & object)
     {
-        item->Draw(drawingBoard);
-    }
+        object.Draw(drawingBoard);
+        object.Clear(drawingBoard);
+        object.Test();
+    });
+    */
 }
 
 void Triangle::Draw(GraphicalDrawingBoard&) const

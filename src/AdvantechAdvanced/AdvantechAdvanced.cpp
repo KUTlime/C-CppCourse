@@ -119,6 +119,7 @@ int main()
     DebugClass dg3 = dg2;
     DebugClass dg4 = 4;
     DebugClass dg5{5};
+    std::string s = dg5;
     std::cout << "i value is " << dg2.GetIValue() << std::endl;
     std::cout << "i value from dg4 is " << dg4.GetIValue() << std::endl;
     std::string test{'a', 'b', 'c'};
