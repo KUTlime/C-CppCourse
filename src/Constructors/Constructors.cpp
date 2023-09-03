@@ -54,8 +54,13 @@ void Test()
 	using std::vector;
 }
 
+void Test(Real real, Imaginary imaginary)
+{
+}
+
 int main()
 {
-	Complex c();
+	/*Complex c = {0, 1};*/
+	/*Test(0, 0);*/
 	Complex d = { Real(0), Imaginary(0) };
 }

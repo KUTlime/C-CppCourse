@@ -13,6 +13,8 @@ union AccessRights
 	uint8_t FilePermissionMask;
 }; // Stále velikost 1 byte, protože to nám stačí na oba členy unionu
 
+enum Gender {Famale, Male, NotSure};
+
 int main()
 {
 	AccessRights rights;

@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Modules.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Employee.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SomeOtherModule.ixx">
+    <ClCompile Include="OstreamOperatorOverload.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -40,7 +40,7 @@ void Exercice4()
 	int result = 0;
 	std::ranges::for_each(jagger, [&result](std::vector<int> v)
 	{
-		std::ranges::for_each(v, [&result](int i) {result += i; });
+		std::ranges::for_each(v, [&result](int i) {result += i;});
 	});
 	std::cout << result << std::endl;
 }

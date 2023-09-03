@@ -25,7 +25,7 @@ int main()
 {
 	Thing t1{ 10,100 };
 	Thing t2(3, 100);
-	//auto total = add(t1, t2);
+	auto total = add(t1, t2);
 
 	auto no = add(1, 2);
 

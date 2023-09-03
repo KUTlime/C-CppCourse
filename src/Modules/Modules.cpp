@@ -1,5 +1,6 @@
 import <string>;
 import Employee;
+import SomeOtherModule;
 
 int main()
 {
@@ -9,4 +10,5 @@ int main()
 	int limit = 10;
 	int LIMIT = 30;
 
+	Max(1, 20);
 }
