@@ -5,6 +5,8 @@ namespace Demo
 {
     using namespace std;
 
+	int* SumWithPointers(int* a, int* b) { return new int(*a + *b); }
+
     unique_ptr<int> SumWithSmartPointers(const unique_ptr<int>& a, const unique_ptr<int>& b)
     {
         return make_unique<int>(*a + *b);
@@ -46,7 +48,7 @@ int main()
     auto result = SumWithSmartPointers(make_unique<int>(2), make_unique<int>(3));
     std::cout << *result << std::endl;
 
-	/*auto myClassPointer = std::make_unique<MyNaiveThread>(new MyNaiveThread()); // You can't call new with make_unique*/
+	//auto myClassPointer = std::make_unique<MyNaiveThread>(new MyNaiveThread()); // You can't call new with make_unique*/
 	/*MyNaiveThread myNaiveThread();
 	auto validUseOfMakeUnique = std::make_unique<MyNaiveThread>(myNaiveThread); // not OK */
 
@@ -58,4 +60,6 @@ int main()
 
 	auto myClassPointer = std::unique_ptr<MyNaiveThread>(new MyNaiveThread());
 	DoSomeWork(std::move(myClassPointer)); // no constant reference, so I have to move
+
+	DoSomeDangerousOperation(validUseOfMakeUnique); // no need to call move constructor
 }

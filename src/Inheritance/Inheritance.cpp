@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+import DoorStateMachine;
 
 class GrandPa
 {
@@ -21,7 +22,7 @@ class Father : public GrandPa
 {
 public:
 	Father() { std::cout << "Father ctor without parameters." << std::endl; };
-	Father(int a) { std::cout << "Father ctor with parameter a" << a << std::endl; };
+	Father(int a) : GrandPa(a) { std::cout << "Father ctor with parameter a" << a << std::endl; };
 	~Father() {};
 };
 
@@ -31,7 +32,7 @@ class Daughter : public Mother, protected Father
 public:
 	Daughter(int a) : Mother(a) { std::cout << "Daughter ctor with parameter a " << a << std::endl; };
 	Daughter(int a, int b) { std::cout << "Daughter ctor with parameter a & b" << a << std::endl; };
-	Daughter(int a, int b, int c) : Mother(a), Father(a) { std::cout << "Daughter ctor with parameter a & b" << a << std::endl; };
+	Daughter(int a, int b, int c) : Mother(a), Father(a) { std::cout << "Daughter ctor with parameter a & b & c" << a << std::endl; };
 	~Daughter() {};
 };
 
@@ -51,17 +52,24 @@ public:
 	NonBinaryChild(int a) : Mother(a) { std::cout << "NonBinaryChild ctor with parameter a " << a << std::endl; };
 	NonBinaryChild(int a, int b) { std::cout << "NonBinaryChild ctor with parameter a & b" << a << std::endl; };
 	NonBinaryChild(int a, int b, int c) : Mother(a), Father(a), GrandPa(a) { std::cout << "NonBinaryChild ctor with parameter a & b" << a << std::endl; };
-	NonBinaryChild(int a, int b, int c, int d) : Mother(a), Father(a)  { std::cout << "NonBinaryChild ctor with parameter a & b" << a << std::endl; };
+	NonBinaryChild(int a, int b, int c, int d) : Mother(a), Father(a)  { std::cout << "NonBinaryChild ctor with parameter a & b & c & d" << a << std::endl; };
 	~NonBinaryChild() {};
 	void MyOpinion() { std::cout << "I'm gen Z and I don't care." << std::endl; }
 };
 
 int main()
 {
+	std::cout << "1st Daughter" << std::endl;
 	Daughter d(1);
+	std::cout << "2nd Daughter" << std::endl;
 	Daughter e(1, 2);
+	std::cout << "3rd Daughter" << std::endl;
 	Daughter f(1,2,3);
+	std::cout << "1st Son" << std::endl;
 	Son s(1);
 	s.MyOpinion();
+	std::cout << "1st NonBinaryChild" << std::endl;
 	NonBinaryChild n(1, 2, 3, 4);
+
+	DemoDoorStateMachine();
 }

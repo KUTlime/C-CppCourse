@@ -21,6 +21,11 @@ class Foo
 private:
     int Value;
 public:
+    Foo(const Foo& foo) 
+    { 
+        this->Value = foo.Value;
+        this->publicValue = foo.publicValue;
+    }
     int publicValue;
     int getValue() { return Value; }
     void setValue(int value) { Value = value; }
@@ -30,9 +35,62 @@ class Point
 {
 public:
 	Point(double x, double y): x(x), y(y) {}
+    Point(double n) : x(n), y(n) {}
     double x;
     double y;
+    Point operator+(const double & number)
+    {
+        return Point(x + number, y + number);
+    }
+
+    Point operator+(const Point & p) const
+    {
+        return Point(x + p.x, y + p.y);
+    }
+
+    Point operator()(double i)
+    {
+        return Point(i, i);
+    }
+
+    operator double()
+    {
+        return x+y;
+    }
+
+    operator std::string()
+    {
+        return std::format("x: {}, y: {}", x, y);
+    }
+
+    Point& operator+=(double number)
+    {
+        x += number;
+        y += number;
+        return *this;
+    }
+
+    Point& operator>>(const double& number)
+    {
+        x += number;
+        y += number;
+        return *this;
+    }
+
+    Point& operator|=(const double& number)
+    {
+        x += number;
+        y += number;
+        return *this;
+    }
 };
+/*
+std::ostream& operator<< (std::ostream& out, const Point& point)
+{
+    out << "x: " << point.x << "y: " << point.y;
+    return out;
+}*/
+
 class PointWithMemberOverload
 {
 private:
@@ -48,11 +106,6 @@ std::ostream& operator<<(std::ostream& out, const PointWithMemberOverload& point
     return out;
 }
 
-std::ostream & operator<< (std::ostream& out, const Point& point)
-{
-    out << "x: " << point.x << "y: " << point.y;
-    return out;
-}
 class PointWithConversion
 {
 private:
@@ -111,6 +164,21 @@ void DemoSmartPointerOfInterger()
     SmartPointerToInteger foo(42);
 }
 
+void HowToCreateString()
+{
+    using std::string;
+    // stack allocated
+    string s1();
+    string s2{};
+    string s3("asdf");
+    string s4{ "asdf" };
+    string s5 = "asdf";
+    string s6 = { "asdf" };
+    string s7 = { 'a', 's', 'd', 'f' };
+    // heap allocated
+    string* s8 = new string("asdf");
+}
+
 int main()
 {
     std::vector<std::string> participans = {"Radek", "Olga", "David", "Tanner"};
@@ -167,4 +235,19 @@ int main()
     auto labda = []() {return 42; };
 	int i;
     std::cin >> i;
+
+    Point p(0.0, 1.1);
+    p = p + 1.2;
+    p >> 2;
+    p |= 2;
+    p += 1.3;
+    Point p1 = p(10.0);
+
+    Point p2(0.0, 1.1);
+
+    auto p3 = p + p2;
+
+    double p4 = p3;
+
+    std::cout << p3 << std::endl;
 }
