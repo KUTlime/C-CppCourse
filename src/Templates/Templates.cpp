@@ -16,6 +16,12 @@ T AddThreeNumbers(T2 a, T b, T c)
     return a + b + c;
 }
 
+template <typename T>
+T Add(T a, T b)
+{
+    return a + b;
+}
+
 template <class T>
 T FindMaxInArray(const T* array, const size_t & size)
 {

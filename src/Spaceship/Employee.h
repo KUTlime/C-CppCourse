@@ -4,8 +4,8 @@ using std::string;
 class Employee
 {
 private:
-	string name;
 	int number;
+	string name;
 public:
 	auto operator <=>(const Employee& other) const = default;
 	Employee(string fullname, int arbitrarynumber) : name(fullname), number(arbitrarynumber) {}

@@ -38,6 +38,10 @@ void OnePossibleNotSoGoodImplementation()
 			numberOfAttempts++;
 			continue;
 		}
+		catch (const std::exception& ex)
+		{
+
+		}
 		std::cout << "Result: " << denominator / divisor << std::endl;
 		numberOfAttempts = 0;
 	} while (numberOfAttempts < 4);

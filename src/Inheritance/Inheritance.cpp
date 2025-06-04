@@ -57,6 +57,54 @@ public:
 	void MyOpinion() { std::cout << "I'm gen Z and I don't care." << std::endl; }
 };
 
+class Base {
+public:
+	void BaseSomething()
+	{ }
+};
+
+class DerivedOne : public Base {
+public:
+	void DoSometingInOne()
+	{ }
+};
+
+class DerivedTwo : public Base {
+public:
+	void DoSomethingInTwo()
+	{ }
+};
+
+class WithProblem : public DerivedOne, public DerivedTwo {
+public:
+	void DoSomeProblem()
+	{
+		// BaseSomething();
+	}
+};
+
+class WithoutProblem
+{
+private:
+	DerivedOne one;
+	DerivedTwo two;
+
+public:
+	void DoSomething()
+	{
+		one.BaseSomething();
+		two.BaseSomething();
+	}
+};
+
+class WithoutProblemVirtual : virtual public DerivedOne, virtual public DerivedTwo
+{
+	void DoSomething()
+	{
+		Base::BaseSomething();
+	}
+};
+
 int main()
 {
 	std::cout << "1st Daughter" << std::endl;

@@ -87,6 +87,6 @@ int main()
 	ComplexV1 c2(0, 1);
 
 	ComplexV2 d = { }; // Not really good.
-	//ComplexV2 d = {0, 1};
+	// ComplexV2 d = {0, 1};
 	ComplexV2 d = { Real(0), Imaginary(0) };
 }
